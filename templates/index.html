@@ -40,12 +40,16 @@
     <div class="row">
         {% if data.country_code %}
         <div class="col-md-6 col-md-offset-3">
-        <h1>{{city}}</h1>
+        <h1>{{city|title}}</h1>
         <h3>country code : {{data.country_code}}</h1>
             <h5>coordinate : {{data.coordinate}}</h5>
             <h5>temp : {{data.temp}}</h5>
             <h5>pressure : {{data.pressure}} </h5>
             <h5>humidity : {{data.humidity}}</h5>
+        </div>
+        {% else %}
+        <div class="col-md-6 col-md-offset-3">
+            <h2 style='color: red'>{{city|title}} is not found</h2>
         </div>
         {% endif %}
     </div>
