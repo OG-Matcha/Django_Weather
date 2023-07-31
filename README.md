@@ -1,2 +1,2 @@
 # Django_Weather
- This is a django practice project
+This is a simple weather detector built with Django.
