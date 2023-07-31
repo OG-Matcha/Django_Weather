@@ -7,7 +7,7 @@ def index(request):
     if request.method == "POST":
         city = request.POST['city']
         try:
-            res = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=a3bdc3b286dc278a3663cc14d20dbcdd').read()
+            res = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=apikey').read()
         except Exception:
             data = {}
         else:
